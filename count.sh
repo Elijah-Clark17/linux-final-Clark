@@ -1,10 +1,9 @@
 #!/bin/bash
-# This script prints numbers from 1 to 50
+# Print numbers up to a user-defined value
 
-for i in {1..50}
+read -p "Enter a number: " max
 
+for i in $(seq 1 $max)
 do
-
- echo $i
-
+  echo $i
 done
